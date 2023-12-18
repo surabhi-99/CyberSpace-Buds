@@ -11,7 +11,6 @@
    <link rel="stylesheet" href="css/custom.css.map">
 
 
-
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -30,9 +29,9 @@
    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 
-<body class="custom-primary-bg">
+<body>
 
-   <div class="container-fluid text-light px-0 py-2">
+   <div class="top-section container-fluid text-light px-0 py-2 custom-primary-bg">
       <div class="row gx-0 d-none d-lg-flex">
          <div class="col-lg-7 px-5 text-start">
             <div class="h-100 d-inline-flex align-items-center me-4">
@@ -57,10 +56,10 @@
    </div>
 
 
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">Gardener</h1>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid text-g">
+         <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-g fw-bold">Gardener</h1>
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,13 +71,13 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#service">Services</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#project">Projects</a>
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -86,39 +85,41 @@
                      Pages
                   </a>
                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Action</a></li>
-                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                     <li>
-                        <hr class="dropdown-divider">
-                     </li>
-                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     <li><a class="dropdown-item" href="#feature">Features</a></li>
+                     <li><a class="dropdown-item" href="#quote">Free Quote</a></li>
+                     <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                     <li><a class="dropdown-item" href="#">Testimonial</a></li>
                   </ul>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                </li>
-               <a href="" class="btn btn-success py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i
-                  class="fa fa-arrow-right ms-3"></i></a>
             </ul>
          </div>
+         <a href="#quote" class="btn btn-success py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i
+               class="fa fa-arrow-right ms-3"></i></a>
       </div>
    </nav>
 
-    <section class="img-section">
+   <section class="img-section container-fluid p-0 wow fadeIn custom-primary-bg" data-wow-delay="0.1s">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
             <div class="carousel-item active">
-               <img src="images/carousel-1.jpg" class="d-block w-100" alt="...">
+               <img src="images/carousel-1.jpg" class="opacity-25 d-block w-100" alt="...">
                <div class="carousel-caption d-none d-md-block">
-                  <h1>Make Your Home Like Garden</h1>
-                  <button type="button" class="btn btn-success btn-lg">Explore More</button>
+                  <h1 class="display-1 text-white animated slideInDown p-5 m-5 fw-bold">Make Your Home Like
+                     Garden</h1>
+                  <a href=""><button type="button" class="btn btn-success btn-lg py-sm-3 px-sm-4">Explore
+                        More</button></a>
                </div>
             </div>
             <div class="carousel-item">
-               <img src="images/carousel-2.jpg" class="d-block w-100" alt="...">
+               <img src="images/carousel-2.jpg" class="opacity-25 d-block w-100" alt="...">
                <div class="carousel-caption d-none d-md-block">
-                  <h1>Create Your Own Small Garden At Home</h1>
-                  <button type="button" class="btn btn-success btn-lg">Explore More</button>
+                  <h1 class="display-1 text-white mb-5 animated slideInDown fw-bold">Create Your Own Small Garden At
+                     Home</h1>
+                  <a href=""><button type="button" class="btn btn-success btn-lg py-sm-3 px-sm-4">Explore
+                        More</button></a>
                </div>
             </div>
          </div>
@@ -135,109 +136,699 @@
       </div>
    </section>
 
-   <div class="container-fluid top-feature py-5 pt-lg-0">
+   <div class="container-fluid top-feature py-5 pt-lg-0" id="feature">
       <div class="container py-5 pt-lg-0">
-          <div class="row gx-0">
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-times"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>No Hidden Cost</h4>
-                              <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                          </div>
-                      </div>
+         <div class="row gx-0">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+               <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                  <div class="d-flex">
+                     <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                        <i class="fa fa-times text-gl"></i>
+                     </div>
+                     <div class="ps-3">
+                        <h4 class="text-g">No Hidden Cost</h4>
+                        <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                     </div>
                   </div>
-              </div>
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-users"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>Dedicated Team</h4>
-                              <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                          </div>
-                      </div>
+               </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+               <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                  <div class="d-flex">
+                     <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                        <i class="fa fa-users text-gl"></i>
+                     </div>
+                     <div class="ps-3">
+                        <h4 class="text-g">Dedicated Team</h4>
+                        <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                     </div>
                   </div>
-              </div>
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-phone"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>24/7 Available</h4>
-                              <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                          </div>
-                      </div>
+               </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+               <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                  <div class="d-flex">
+                     <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                        <i class="fa fa-phone text-gl"></i>
+                     </div>
+                     <div class="ps-3">
+                        <h4 class="text-g">24/7 Available</h4>
+                        <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                     </div>
                   </div>
-              </div>
-          </div>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 
-   <div class="container-xxl py-5">
+   <div class="about-section container-xxl py-5" id="about">
       <div class="container">
-          <div class="row g-5 align-items-end">
-              <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                  <img class="img-fluid rounded" data-wow-delay="0.1s" src="images/about.jpg">
-              </div>
-              <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                  <h1 class="display-1 text-primary mb-0">25</h1>
-                  <p class="text-primary mb-4">Year of Experience</p>
-                  <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-                  <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                      eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                  </p>
-                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-              </div>
-              <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                  <div class="row g-5">
-                      <div class="col-12 col-sm-6 col-lg-12">
-                          <div class="border-start ps-4">
-                              <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                              <h4 class="mb-3">Award Winning</h4>
-                              <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                          </div>
-                      </div>
-                      <div class="col-12 col-sm-6 col-lg-12">
-                          <div class="border-start ps-4">
-                              <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                              <h4 class="mb-3">Dedicated Team</h4>
-                              <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                          </div>
-                      </div>
+         <div class="row g-5 align-items-end">
+            <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+               <img class="img-fluid rounded" data-wow-delay="0.1s" src="images/about.jpg">
+            </div>
+            <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+               <h1 class="display-1 text-gl fw-bold mb-0">25</h1>
+               <p class="text-gl mb-4 fw-bold">Year of Experience</p>
+               <h1 class="display-5 text-g mb-4 fw-bold">We Make Your Home Like A Garden</h1>
+               <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                  eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+               </p>
+               <a class="btn btn-success py-3 px-4" href="">Explore More</a>
+            </div>
+            <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+               <div class="row g-5">
+                  <div class="col-12 col-sm-6 col-lg-12">
+                     <div class="border-start ps-4">
+                        <i class="fa fa-award fa-3x text-gl mb-3"></i>
+                        <h4 class="mb-3 text-g">Award Winning</h4>
+                        <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                     </div>
                   </div>
-              </div>
-          </div>
+                  <div class="col-12 col-sm-6 col-lg-12">
+                     <div class="border-start ps-4">
+                        <i class="fa fa-users fa-3x text-gl mb-3"></i>
+                        <h4 class="mb-3 text-g">Dedicated Team</h4>
+                        <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-  </div>
+   </div>
 
-   <section class="section-last text-white">
-      <div class="d-flex h-100 align-items-end">
-        <p class="text-center">©</p>
+   <div class="container-fluid facts my-5 py-5 custom-primary-bg" id="fact" data-parallax="scroll"
+      data-image-src="images/carousel-1.jpg">
+      <div class="container py-5">
+         <div class="row g-5">
+
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+               <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+               <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+               <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+               <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+               <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+               <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+               <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+               <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+            </div>
+         </div>
       </div>
-    </section>
+   </div>
 
+   <div class="features container-xxl py-5" id="feature">
+      <div class="container">
+         <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+               <p class="fs-5 fw-bold text-gl">Why Choosing Us!</p>
+               <h1 class="display-5 mb-4 text-g fw-bolder">Few Reasons Why People Choosing Us!</h1>
+               <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                  eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+               </p>
+               <a class="btn btn-success py-3 px-4" href="">Explore More</a>
+            </div>
+            <div class="col-lg-6">
+               <div class="row g-4 align-items-center">
+                  <div class="col-md-6">
+                     <div class="row g-4">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                           <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                              <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                 style="width: 90px; height: 90px;">
+                                 <i class="fa fa-check fa-3x text-gl"></i>
+                              </div>
+                              <h4 class="mb-0 text-g">100% Satisfaction</h4>
+                           </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                           <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                              <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                 style="width: 90px; height: 90px;">
+                                 <i class="fa fa-users fa-3x text-gl"></i>
+                              </div>
+                              <h4 class="mb-0 text-g">Dedicated Team</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                     <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                           <i class="fa fa-tools fa-3x text-gl"></i>
+                        </div>
+                        <h4 class="mb-0 text-g">Modern Equipment</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-xxl py-5" id="service">
+      <div class="container">
+         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-gl">Our Services</p>
+            <h1 class="display-5 mb-5 text-g fw-bold">Services That We Offer For You</h1>
+         </div>
+         <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-1.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-3.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Landscaping</h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-2.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-6.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Pruning plants</h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-3.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-5.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Irrigation & Drainage</h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-4.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-4.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Garden Maintenance </h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-5.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-8.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Green Technology</h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+               <div class="service-item rounded d-flex h-100">
+                  <div class="service-img rounded">
+                     <img class="img-fluid" src="images/service-6.jpg" alt="">
+                  </div>
+                  <div class="service-text rounded p-5">
+                     <div class="btn-square rounded-circle mx-auto mb-3">
+                        <img class="img-fluid" src="images/icon-2.png" alt="Icon">
+                     </div>
+                     <h4 class="mb-3 text-g fw-bold">Urban Gardening</h4>
+                     <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                        stet diam sed stet.</p>
+                     <a class="btn btn-sm" href=""><i class="fa fa-plus text-gl me-2"></i>Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="quote bg-image container-fluid my-5 py-5" id="quote" data-parallax="scroll" data-image-src="images/carousel-2.jpg">
+      <div class="container py-5">
+         <div class="row justify-content-center">
+            <div class="col-lg-7">
+               <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                  <h1 class="display-5 text-center mb-5 text-g fw-bold">Get A Free Quote</h1>
+                  <div class="row g-3">
+                     <div class="col-sm-6">
+                        <div class="form-floating">
+                           <input type="text" class="form-control bg-light border-0" id="gname"
+                              placeholder="Gurdian Name">
+                           <label for="gname">Your Name</label>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-floating">
+                           <input type="email" class="form-control bg-light border-0" id="gmail"
+                              placeholder="Gurdian Email">
+                           <label for="gmail">Your Email</label>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-floating">
+                           <input type="text" class="form-control bg-light border-0" id="cname"
+                              placeholder="Child Name">
+                           <label for="cname">Your Mobile</label>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-floating">
+                           <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
+                           <label for="cage">Service Type</label>
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="form-floating">
+                           <textarea class="form-control bg-light border-0" placeholder="Leave a message here"
+                              id="message" style="height: 100px"></textarea>
+                           <label for="message">Message</label>
+                        </div>
+                     </div>
+                     <div class="col-12 text-center">
+                        <button class="btn btn-success py-3 px-4" type="submit">Submit Now</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-xxl py-5 custom-project" id="project">
+      <div class="container">
+         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-gl">Our Projects</p>
+            <h1 class="display-5 mb-5 fw-bold text-g">Some Of Our Wonderful Projects</h1>
+         </div>
+         <!-- <div class="row wow fadeInUp" data-wow-delay="0.3s">
+           <div class="col-12 text-center">
+               <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                   <li class="mx-2 active" data-filter="*">All</li>
+                   <li class="mx-2" data-filter=".first">Complete Projects</li>
+                   <li class="mx-2" data-filter=".second">Ongoing Projects</li>
+               </ul>
+           </div>
+       </div> -->
+
+
+         <div class="main-content">
+            <div class="card-content">
+               <div class="d-flex justify-content-between mt-3">
+
+                  <!-- Modal -->
+                  <button type="button" class="btn custom-add-img-btn ml-3" data-toggle="modal"
+                     data-target="#addBookModal">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <path
+                           d="M12.7838 21.86C17.9532 21.86 22.1438 17.6694 22.1438 12.5C22.1438 7.33063 17.9532 3.14001 12.7838 3.14001C7.61444 3.14001 3.42383 7.33063 3.42383 12.5C3.42383 17.6694 7.61444 21.86 12.7838 21.86Z"
+                           stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M8.88379 12.5H16.6838" stroke="white" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                        <path d="M12.7837 8.59998V16.4" stroke="white" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                     </svg>
+                     Add Image</button>
+
+                  <!-- Modal Form -->
+                  <div class="modal fade" id="addBookModal" tabindex="-1" aria-labelledby="addBook" aria-hidden="true">
+                     <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="addBook">Add Image Form</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <form action="https://cyberspacebuds.com/endpoint/add_book.php" method="POST"
+                                 class="add-form" enctype="multipart/form-data">
+                                 <div class="form-group" hidden>
+                                    <label for="tbl_book_id">Book ID</label>
+                                    <input type="text" class="form-control" id="bookID" name="tbl_book_id">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="bookImage">Image</label>
+                                    <input type="file" class="form-control-file" id="bookImage" name="book_image">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="bookTitle">Image Title</label>
+                                    <input type="text" class="form-control" id="bookTitle" name="book_title">
+                                 </div>
+                                 <!-- Commented out category, author, and abstract fields -->
+                                 <!--
+               <div class="form-group">
+                   <label for="bookCategory">Category</label>
+                   <select class="form-control" name="book_category" id="bookCategory">
+                       <option value="">- select -</option>
+                       <option value="Educational">Educational</option>
+                       <option value="Fiction">Fiction</option>
+                       <option value="Fantasy">Fantasy</option>
+                       <option value="Romance">Romance</option>
+                       <option value="Science Fiction">Science Fiction</option>
+                       <option value="Mystery">Mystery</option>
+                       <option value="Horror">Horror</option>
+                   </select>
+               </div>
+               -->
+                                 <!-- <div class="form-group">
+                   <label for="bookAuthor">Book Author/s</label>
+                   <input type="text" class="form-control" id="bookAuthor" name="book_author">
+               </div> -->
+                                 <!-- <div class="form-group">
+                   <label for="bookAbstract">Book Abstract</label>
+                   <textarea class="form-control" name="book_abstract" id="bookAbstract" cols="30"
+                       rows="10"></textarea>
+               </div> -->
+                                 <!-- Add secret code field -->
+                                 <div class="form-group">
+                                    <label for="secretCode">Secret Code</label>
+                                    <input type="text" class="form-control" id="secretCode" name="secret_code" required>
+                                 </div>
+
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-dark">Add Image</button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal fade" id="viewBookDetailsModal" tabindex="-1" aria-labelledby="viewBook"
+                     aria-hidden="true">
+                     <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="viewBook">Book Full Details</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <form class="view-form">
+                                 <div class="form-group text-center">
+                                    <h4 class="viewBookTitle"></h4>
+                                    <img id="viewBookImage" class="card-img-top mt-2" alt="book" style="width:200px">
+                                 </div>
+                                 <div class="form-group text-center">
+                                    <i>Category: </i><i class="viewBookCategory"></i><br>
+                                    <h6 class="viewBookAuthor"></h6>
+                                 </div>
+
+                                 <div class="form-group text-center">
+                                    <p class="viewBookAbstract"></p>
+                                 </div>
+
+                                 <div class="form-group">
+                                    <small class="viewBookDateAdded"></small>
+                                 </div>
+
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary ml-3" data-toggle="modal"
+                                       data-target="#updateBookModal">Update
+                                       Book</button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card-list" data-category="<br />
+<b>Notice</b>:  Undefined variable: bookCategory in <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>794</b><br />
+">
+                        <thead></thead>
+                        <h6 id="bookID-14" hidden>
+                           14 </h6>
+                        <h6 id="bookAuthor-14" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAuthor in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>800</b><br />
+                        </h6>
+                        <p id="bookAbstract-14" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAbstract in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>803</b><br />
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center wow fadeInUp"
+                           data-wow-delay="0.1s">
+                           <div class="portfolio-inner rounded">
+                              <img id="bookImage-14" src="https://cyberspacebuds.com/image/cpanel.jpg" class="img-fluid"
+                                 alt="Book Image">
+                              <div class="portfolio-text">
+                                 <h4 class="text-white mb-4">
+                                    Test </h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card-list" data-category="<br />
+<b>Notice</b>:  Undefined variable: bookCategory in <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>794</b><br />
+">
+                        <thead></thead>
+                        <h6 id="bookID-13" hidden>
+                           13 </h6>
+                        <h6 id="bookAuthor-13" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAuthor in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>800</b><br />
+                        </h6>
+                        <p id="bookAbstract-13" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAbstract in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>803</b><br />
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center wow fadeInUp"
+                           data-wow-delay="0.1s">
+                           <div class="portfolio-inner rounded">
+                              <img id="bookImage-13" src="https://cyberspacebuds.com/image/service-2.jpg"
+                                 class="img-fluid" alt="Book Image">
+                              <div class="portfolio-text">
+                                 <h4 class="text-white mb-4">
+                                    Test Admin </h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card-list" data-category="<br />
+<b>Notice</b>:  Undefined variable: bookCategory in <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>794</b><br />
+">
+                        <thead></thead>
+                        <h6 id="bookID-12" hidden>
+                           12 </h6>
+                        <h6 id="bookAuthor-12" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAuthor in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>800</b><br />
+                        </h6>
+                        <p id="bookAbstract-12" hidden>
+                           <br />
+                           <b>Notice</b>: Undefined variable: bookAbstract in
+                           <b>/home/cyberspacebuds/public_html/index.php</b> on line <b>803</b><br />
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center wow fadeInUp"
+                           data-wow-delay="0.1s">
+                           <div class="portfolio-inner rounded">
+                              <img id="bookImage-12" src="https://cyberspacebuds.com/image/service-1.jpg"
+                                 class="img-fluid" alt="Book Image">
+                              <div class="portfolio-text">
+                                 <h4 class="text-white mb-4">
+                                    Test </h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="team container-xxl py-5" id="team">
+      <div class="container">
+         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-gl">Our Team</p>
+            <h1 class="display-5 mb-5 text-g fw-bolder">Dedicated & Experienced Team Members</h1>
+         </div>
+         <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+               <div class="team-item rounded">
+                  <img class="img-fluid" src="images/team-1.jpg" alt="">
+                  <div class="team-text">
+                     <h4 class="mb-0 text-g">Doris Jordan</h4>
+                     <p class="text-gl">Landscape Designer</p>
+                     <div class="team-social d-flex text-gl">
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+               <div class="team-item rounded">
+                  <img class="img-fluid" src="images/team-2.jpg" alt="">
+                  <div class="team-text">
+                     <h4 class="mb-0 text-g">Johnny Ramirez</h4>
+                     <p class="text-gl">Garden Designer</p>
+                     <div class="team-social d-flex text-gl">
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+               <div class="team-item rounded">
+                  <img class="img-fluid" src="images/team-3.jpg" alt="">
+                  <div class="team-text">
+                     <h4 class="mb-0 text-g">Diana Wagner</h4>
+                     <p class="text-gl">Senior Gardener</p>
+                     <div class="team-social d-flex text-gl">
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid custom-secondary-bg text-light footer mt-5 py-5 wow fadeIn" id="contact" data-wow-delay="0.1s">
+      <div class="container py-5">
+         <div class="row g-5">
+            <div class="col-lg-3 col-md-7">
+               <h4 class="text-white mb-4">Our Office</h4>
+               <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+               <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+               <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+               <div class="d-flex pt-2">
+                  <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                        class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                        class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                        class="fab fa-youtube"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                        class="fab fa-linkedin-in"></i></a>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h4 class="text-white mb-4">Services</h4>
+               <a class="btn btn-link text-white" href="">Landscaping</a>
+               <a class="btn btn-link text-white" href="">Pruning plants</a>
+               <a class="btn btn-link text-white" href="">Urban Gardening</a>
+               <a class="btn btn-link text-white" href="">Garden Maintenance</a>
+               <a class="btn btn-link text-white" href="">Green Technology</a>
+            </div>
+            <div class="col-lg-3 col-md-4">
+               <h4 class="text-white mb-4">Quick Links</h4>
+               <a class="btn btn-link text-white" href="">About Us</a>
+               <a class="btn btn-link text-white" href="">Contact Us</a>
+               <a class="btn btn-link text-white" href="">Our Services</a>
+               <a class="btn btn-link text-white" href="">Terms & Condition</a>
+               <a class="btn btn-link text-white" href="">Support</a>
+           </div>           
+            <div class="col-lg-3 col-md-7">
+               <h4 class="text-white mb-4">Newsletter</h4>
+               <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+               <div class="position-relative w-100">
+                  <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
+                     placeholder="Your email">
+                  <button type="button"
+                     class="btn btn-success py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <a href="#" class="btn btn-lg btn-success btn-lg-square rounded-circle back-to-top p-1 pt-2"><i
+      class="bi bi-arrow-up"></i></a>
+
+   <section class="copyright text-white custom-primary-bg justify-content-center py-4">
+      <div class="row">
+      <div class="d-flex h-100 justify-content-center">
+         <p class="text-center">© <a class="" href="">Cyber Space Buds</a>, All Rights Reserved.</p>
+      </div>
+   </div>
+   </section>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"></script>
+
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/counterup/counterup.min.js"></script>
+   <script src="lib/parallax/parallax.min.js"></script>
+   <script src="lib/isotope/isotope.pkgd.min.js"></script>
+   <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+   <script src="js/index.js"></script>
 
 </body>
 
